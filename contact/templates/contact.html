@@ -1,0 +1,48 @@
+{% extends 'master.html' %}
+
+{% load static %}
+{% block 'content' %}
+<section class="container forms">
+    <div class="form contact">
+        <div class="form-content">
+            <header><b>Contact Us</b></header>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div class="field input-field">
+                    <label>First Name:</label><br>
+                    <input type="text" class="fname" name="first_name" placeholder="First Name" required>
+                </div>
+                <div class="field input-field">
+                    <label>Last Name:</label><br>
+                    <input type="text" class="lname" name="last_name" placeholder="Last Name" required>
+                </div>
+                <div class="field input-field">
+                    <label>Email:</label><br>
+                    <input type="email" class="email" name="email" placeholder="Enter Your Email">
+                </div>
+                <div class="field input-field">
+                    <label>Password:</label><br>
+                    <input type="password" class="password" name="password" placeholder="Create a New Password">
+                    <i class="bx bx-hide eye-icon"></i>
+                </div>
+                <div class="field input-field">
+                    <label>Phone:</label><br>
+                    <input type="tel" class="nmbr" name="phone" placeholder="Enter Phone Nmuber">
+                </div>
+                <div class="field input-field">
+                    <label>Address:</label><br>
+                    <input type="text" class="address" name="address" placeholder="Your Current Address">
+                </div>
+
+                <div class="field button-field">
+                    <br><button type="submit" class="button"><b>Submit</b></button>
+                </div>
+            </form>
+        </div>
+        
+        
+    
+    </div>
+
+</section>
+{% endblock %}

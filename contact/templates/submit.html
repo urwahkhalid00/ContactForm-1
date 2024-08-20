@@ -1,0 +1,22 @@
+{% load i18n %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted</title>
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}">
+</head>
+<body>
+    <div class="img">
+        <img src="{% static 'img/Successfully.jpg' %}" alt="" height="200px">
+    </div>
+    <div class="submit">{% trans "Your Contact Form Submitted Successfully" %}</div>
+    <div class=" btn">
+        <button><a href="{% url 'contact' %}">Go Back</a></button>
+    </div>
+    
+</body>
+</html>
